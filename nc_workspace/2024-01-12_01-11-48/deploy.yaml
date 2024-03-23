@@ -1,0 +1,7 @@
+model:
+  backend: ipex
+  domain: auto
+  inputs: []
+  outputs: []
+  quant_format: default
+device: cpu

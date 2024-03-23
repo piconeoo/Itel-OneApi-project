@@ -1,0 +1,1125 @@
+{
+    " ": {
+        "q_op_infos": {
+            "0": {
+                "op_type": "<class 'torch.nn.modules.conv.Conv2d'>",
+                "op_type_is_module": true,
+                "fqn": "conv1",
+                "input_tensor_infos": [
+                    {
+                        "id": 0,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.015748031437397003
+                        ],
+                        "zero_point": [
+                            64
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [
+                    {
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.qint8",
+                        "scale": [
+                            0.009740865789353848,
+                            0.02115604467689991,
+                            0.0020403070375323296,
+                            0.023669125512242317,
+                            0.005030821077525616,
+                            0.00487668439745903,
+                            0.0024822575505822897,
+                            0.014026625081896782,
+                            0.00701782014220953,
+                            0.00826236791908741,
+                            0.011750037781894207,
+                            0.0047284443862736225,
+                            0.012746336869895458,
+                            0.01819445565342903,
+                            0.015600030310451984,
+                            0.005651372950524092,
+                            0.013367144390940666,
+                            0.010100336745381355,
+                            0.02032349444925785,
+                            0.014978080987930298,
+                            0.009562360122799873,
+                            0.005355872679501772,
+                            0.010364804416894913,
+                            0.008954320102930069,
+                            0.0142011484131217,
+                            0.003242786740884185,
+                            0.001371767371892929,
+                            0.006735252216458321,
+                            0.0023464879486709833,
+                            0.0015503105241805315,
+                            0.010187962092459202,
+                            0.0019575380720198154,
+                            0.008906818926334381,
+                            0.013524550944566727,
+                            0.020451165735721588,
+                            0.010612069629132748,
+                            0.0043866694904863834,
+                            0.011126818135380745,
+                            0.014541796408593655,
+                            0.020363442599773407,
+                            0.002573750913143158,
+                            0.0016928878612816334,
+                            0.00382484239526093,
+                            0.0164988711476326,
+                            0.008541752584278584,
+                            0.007001569494605064,
+                            0.006524097640067339,
+                            0.014349815435707569,
+                            0.0018639498157426715,
+                            0.003899996168911457,
+                            0.006964970380067825,
+                            0.013840915635228157,
+                            0.010655858553946018,
+                            0.010911298915743828,
+                            0.019154975190758705,
+                            0.007250733207911253,
+                            0.015400135889649391,
+                            0.005309447646141052,
+                            0.006210316438227892,
+                            0.02320917695760727,
+                            0.003489249385893345,
+                            0.011926117353141308,
+                            0.015653075650334358,
+                            0.003035689936950803
+                        ],
+                        "zero_point": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                "output_tensor_infos": [
+                    {
+                        "id": 1,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32",
+                        "scale": [
+                            0.17855362594127655
+                        ],
+                        "zero_point": [
+                            126
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "1": {
+                "op_type": "<function relu at 0x7f5d6b2bbca0>",
+                "op_type_is_module": false,
+                "fqn": "",
+                "input_tensor_infos": [
+                    {
+                        "id": 1,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32",
+                        "force_dtype": "torch.float32",
+                        "scale": [
+                            0.17855362594127655
+                        ],
+                        "zero_point": [
+                            126
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [],
+                "output_tensor_infos": [
+                    {
+                        "id": 2,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "scale": [
+                            0.1809568852186203
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": false,
+                    "quant_min": 0,
+                    "quant_max": 255
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "2": {
+                "op_type": "<class 'torch.nn.modules.pooling.MaxPool2d'>",
+                "op_type_is_module": true,
+                "fqn": "pool1",
+                "input_tensor_infos": [
+                    {
+                        "id": 2,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.1809568852186203
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [],
+                "output_tensor_infos": [
+                    {
+                        "id": 3,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "scale": [
+                            0.1809568852186203
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "3": {
+                "op_type": "<class 'torch.nn.modules.conv.Conv2d'>",
+                "op_type_is_module": true,
+                "fqn": "conv2",
+                "input_tensor_infos": [
+                    {
+                        "id": 3,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.1809568852186203
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [
+                    {
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.qint8",
+                        "scale": [
+                            0.000664771709125489,
+                            0.00037640781374648213,
+                            0.00035200471756979823,
+                            0.00017842691158875823,
+                            0.0006002826848998666,
+                            0.0007189086172729731,
+                            0.000419844058342278,
+                            0.0003202707157470286,
+                            0.0004812818660866469,
+                            0.0004365002387203276,
+                            0.00024904770543798804,
+                            0.000415983609855175,
+                            0.0005079598049633205,
+                            0.00039188069058582187,
+                            0.00044381889165379107,
+                            0.0005643546464852989,
+                            0.0005250113899819553,
+                            0.0003213353920727968,
+                            0.0004062629013787955,
+                            0.0006000233697704971,
+                            0.0005446379072964191,
+                            0.000448065809905529,
+                            0.00036503528826870024,
+                            0.00035626074532046914,
+                            0.00028386522899381816,
+                            0.000606267771217972,
+                            0.00039299181662499905,
+                            0.00048804006655700505,
+                            0.0004096196498721838,
+                            0.00035552933695726097,
+                            0.0005567173357121646,
+                            0.00043567910324782133,
+                            0.0006282489048317075,
+                            0.0007564275874756277,
+                            0.00032843780354596674,
+                            0.0006058348226360977,
+                            0.0004107382264919579,
+                            0.0005652396939694881,
+                            0.0006465516635216773,
+                            0.000703255704138428,
+                            0.00026924069970846176,
+                            0.00030363016412593424,
+                            0.00018881818687077612,
+                            0.0005041956319473684,
+                            0.0002984887978527695,
+                            0.0005084598669782281,
+                            0.0004522023373283446,
+                            0.0005370143335312605,
+                            0.0005341977812349796,
+                            0.0004031331045553088,
+                            0.0006981654441915452,
+                            0.00048108550254255533,
+                            0.0005177356651984155,
+                            0.0003491318493615836,
+                            0.0007024873630143702,
+                            0.0005336829926818609,
+                            0.0006517600268125534,
+                            0.000774330401327461,
+                            0.00042599416337907314,
+                            0.00035863477387465537,
+                            0.0004778152797371149,
+                            0.0005075798253528774,
+                            0.00021161214681342244,
+                            0.0008505962905474007
+                        ],
+                        "zero_point": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                "output_tensor_infos": [
+                    {
+                        "id": 4,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32",
+                        "scale": [
+                            0.17687946557998657
+                        ],
+                        "zero_point": [
+                            126
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "4": {
+                "op_type": "<function relu at 0x7f5d6b2bbca0>",
+                "op_type_is_module": false,
+                "fqn": "",
+                "input_tensor_infos": [
+                    {
+                        "id": 4,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32",
+                        "force_dtype": "torch.float32",
+                        "scale": [
+                            0.17687946557998657
+                        ],
+                        "zero_point": [
+                            126
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [],
+                "output_tensor_infos": [
+                    {
+                        "id": 5,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "scale": [
+                            0.18005777895450592
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": false,
+                    "quant_min": 0,
+                    "quant_max": 255
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "5": {
+                "op_type": "<class 'torch.nn.modules.pooling.MaxPool2d'>",
+                "op_type_is_module": true,
+                "fqn": "pool2",
+                "input_tensor_infos": [
+                    {
+                        "id": 5,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.18005777895450592
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [],
+                "output_tensor_infos": [
+                    {
+                        "id": 6,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "scale": [
+                            0.18005777895450592
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "6": {
+                "op_type": "<class 'torch.nn.modules.conv.Conv2d'>",
+                "op_type_is_module": true,
+                "fqn": "conv3",
+                "input_tensor_infos": [
+                    {
+                        "id": 6,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.18005777895450592
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [
+                    {
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.qint8",
+                        "scale": [
+                            0.0008343582740053535,
+                            0.00046420274884440005,
+                            0.001267488463781774,
+                            0.0007501014042645693,
+                            0.0006764492718502879,
+                            0.0007437062449753284,
+                            0.000664475082885474,
+                            0.0005923195858485997,
+                            0.0008842614479362965,
+                            0.00038274613325484097,
+                            0.0006107235094532371,
+                            0.0005675784195773304,
+                            0.001293808571062982,
+                            0.0008613173849880695,
+                            0.0010184928542003036,
+                            0.0011305613443255424,
+                            0.0007070686551742256,
+                            0.0009860394056886435,
+                            0.0013669449836015701,
+                            0.0010287805926054716,
+                            0.0007323523750528693,
+                            0.0008123618899844587,
+                            0.0010970889125019312,
+                            0.0009265335975214839,
+                            0.0005054567009210587,
+                            0.0008425919804722071,
+                            0.000512119266204536,
+                            0.0011443987023085356,
+                            0.000440963136497885,
+                            0.0005830522277392447,
+                            0.0011593722738325596,
+                            0.000501301430631429
+                        ],
+                        "zero_point": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                "output_tensor_infos": [
+                    {
+                        "id": 7,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32",
+                        "scale": [
+                            0.1354629248380661
+                        ],
+                        "zero_point": [
+                            118
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "7": {
+                "op_type": "<function relu at 0x7f5d6b2bbca0>",
+                "op_type_is_module": false,
+                "fqn": "",
+                "input_tensor_infos": [
+                    {
+                        "id": 7,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32",
+                        "force_dtype": "torch.float32",
+                        "scale": [
+                            0.1354629248380661
+                        ],
+                        "zero_point": [
+                            118
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [],
+                "output_tensor_infos": [
+                    {
+                        "id": 8,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "scale": [
+                            0.1462729424238205
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": false,
+                    "quant_min": 0,
+                    "quant_max": 255
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "8": {
+                "op_type": "<class 'torch.nn.modules.pooling.MaxPool2d'>",
+                "op_type_is_module": true,
+                "fqn": "pool3",
+                "input_tensor_infos": [
+                    {
+                        "id": 8,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.1462729424238205
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [],
+                "output_tensor_infos": [
+                    {
+                        "id": 9,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "scale": [
+                            0.1462729424238205
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "9": {
+                "op_type": "<class 'torch.nn.modules.conv.Conv2d'>",
+                "op_type_is_module": true,
+                "fqn": "conv4",
+                "input_tensor_infos": [
+                    {
+                        "id": 9,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.1462729424238205
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [
+                    {
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.qint8",
+                        "scale": [
+                            0.00047502043889835477,
+                            0.000616230652667582,
+                            0.0006311486940830946,
+                            0.000561725755687803,
+                            0.000732214015442878,
+                            0.0004935056786052883,
+                            0.0006910366355441511,
+                            0.0010919241467490792,
+                            0.0005465549184009433,
+                            0.0007851544651202857,
+                            0.0005515136872418225,
+                            0.0009996895678341389,
+                            0.0008407700224779546,
+                            0.0004691573267336935,
+                            0.0005690194084309042,
+                            0.00036781473318114877,
+                            0.0004806488868780434,
+                            0.0006850098143331707,
+                            0.00048028904711827636,
+                            0.0005998369306325912,
+                            0.0004287607443984598,
+                            0.0008432245813310146,
+                            0.00043078858288936317,
+                            0.000704642734490335,
+                            0.00045013142516836524,
+                            0.00040896833525039256,
+                            0.0004538175999186933,
+                            0.0004530928563326597,
+                            0.0007405447540804744,
+                            0.0007687123725190759,
+                            0.0006737844087183475,
+                            0.0009293027687817812
+                        ],
+                        "zero_point": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                "output_tensor_infos": [
+                    {
+                        "id": 10,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32",
+                        "scale": [
+                            0.0658738762140274
+                        ],
+                        "zero_point": [
+                            162
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "10": {
+                "op_type": "<function relu at 0x7f5d6b2bbca0>",
+                "op_type_is_module": false,
+                "fqn": "",
+                "input_tensor_infos": [
+                    {
+                        "id": 10,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32",
+                        "force_dtype": "torch.float32",
+                        "scale": [
+                            0.0658738762140274
+                        ],
+                        "zero_point": [
+                            162
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [],
+                "output_tensor_infos": [
+                    {
+                        "id": 11,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "scale": [
+                            0.04824869707226753
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": false,
+                    "quant_min": 0,
+                    "quant_max": 255
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "11": {
+                "op_type": "<class 'torch.nn.modules.pooling.MaxPool2d'>",
+                "op_type_is_module": true,
+                "fqn": "pool4",
+                "input_tensor_infos": [
+                    {
+                        "id": 11,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.04824869707226753
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [],
+                "output_tensor_infos": [
+                    {
+                        "id": 12,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "scale": [
+                            0.04824869707226753
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            },
+            "12": {
+                "op_type": "<class 'torch.nn.modules.linear.Linear'>",
+                "op_type_is_module": true,
+                "fqn": "fc1",
+                "input_tensor_infos": [
+                    {
+                        "id": 13,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8",
+                        "force_dtype": "torch.quint8",
+                        "scale": [
+                            0.04824869707226753
+                        ],
+                        "zero_point": [
+                            0
+                        ]
+                    }
+                ],
+                "weight_tensor_infos": [
+                    {
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.qint8",
+                        "scale": [
+                            0.0015592637937515974,
+                            0.0015990199754014611
+                        ],
+                        "zero_point": [
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                "output_tensor_infos": [
+                    {
+                        "id": 14,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.float32"
+                    }
+                ],
+                "activation_observer": {
+                    "name": "MinMaxObserver",
+                    "dtype": "torch.quint8",
+                    "qscheme": "torch.per_tensor_affine",
+                    "reduce_range": true,
+                    "quant_min": 0,
+                    "quant_max": 127
+                },
+                "weight_observer": {
+                    "name": "PerChannelMinMaxObserver",
+                    "ch_axis": 0,
+                    "dtype": "torch.qint8",
+                    "qscheme": "torch.per_channel_symmetric",
+                    "reduce_range": false,
+                    "quant_min": -128,
+                    "quant_max": 127
+                }
+            }
+        },
+        "nonq_op_infos": {
+            "0": {
+                "op_type": "<method 'size' of 'torch._C._TensorBase' objects>",
+                "fqn": "",
+                "input_tensor_infos": [
+                    {
+                        "id": 12,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8"
+                    },
+                    {}
+                ],
+                "output_tensor_infos": []
+            },
+            "1": {
+                "op_type": "<method 'reshape' of 'torch._C._TensorBase' objects>",
+                "fqn": "",
+                "input_tensor_infos": [
+                    {
+                        "id": 12,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8"
+                    },
+                    {},
+                    {}
+                ],
+                "output_tensor_infos": [
+                    {
+                        "id": 13,
+                        "orig_dtype": "torch.float32",
+                        "inf_dtype": "torch.quint8"
+                    }
+                ]
+            }
+        },
+        "layer_output_infos": [
+            {
+                "id": 14,
+                "orig_dtype": "torch.float32",
+                "inf_dtype": "torch.float32"
+            }
+        ]
+    }
+}
